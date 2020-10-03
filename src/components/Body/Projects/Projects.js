@@ -1,13 +1,32 @@
 import React, { Component } from 'react';
 
 import './Projects.css';
+import Projectcard from './Projectcard/Projectcard';
+import Burgerbuilder from './burger_builder.png';
 
 class Projects extends Component {
   render() {
     return (
-      <div className="project">
+      <div>
         <h3 className="project_header">Projects</h3>
-        <div className="project_summary">
+        <div className="row">
+          <div className="col-sm-6">
+            <Projectcard photo={Burgerbuilder} title={'Burger Builer'} />
+          </div>
+          <div className="col-sm-6">
+            <Projectcard photo={Burgerbuilder} title={'Lyrics Finder'} />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-6">
+            <Projectcard photo={Burgerbuilder} title={'Beach Resort'} />
+          </div>
+          <div className="col-sm-6">
+            <Projectcard photo={Burgerbuilder} title={'Github Finder'} />
+          </div>
+        </div>
+
+        {/* <div className="project_summary">
           <h5 className="project_name">Burger Builder</h5>
           <div className="project_desc">
             <p>
@@ -79,8 +98,8 @@ class Projects extends Component {
               2: It is built by using HTML, JavaScript, Bootstrap and GitHub
               OAuth api.
             </p>
-          </div>
-        </div>
+          </div> 
+        </div>*/}
       </div>
     );
   }
