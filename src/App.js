@@ -6,6 +6,7 @@ import About from './components/Body/About/About';
 import Education from './components/Body/Education/Education';
 import Project from './components/Body/Projects/Projects';
 import Footer from './components/Footer/Footer';
+import Contact from './components/Body/Contact/Contact';
 
 // import { Switch, BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
@@ -17,6 +18,7 @@ class App extends Component {
         <About />
         <Education />
         <Project />
+        <Contact />
         <Footer />
       </div>
     );

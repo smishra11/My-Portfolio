@@ -1,17 +1,30 @@
 import React from 'react';
 
-// import Burgerbuilder from '../burger_builder.png';
+import './Projectcard.css';
 
 const Projectcard = (props) => {
   return (
-    <div className="projectcard">
-      <div className="card" style={{ width: '20rem' }}>
-        <img className="card-img-top" src={props.photo} alt="Card cap" />
-        <div className="card-body">
-          <h5 className="card-title">{props.title}</h5>
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+    <div className="card projectcard">
+      <img className="card-img-top" src={props.projectImage} alt="Card cap" />
+      <div className="card-body">
+        <h5 className="card-title">{props.title}</h5>
+        {/* take to middle of card image */}
+        <div className="card-text card_link">
+          <p>
+            Git Hub :
+            <a target="_blank" rel="noopener noreferrer" href={props.gitLink}>
+              {props.gitLink}
+            </a>
+          </p>
+          <p>
+            Deployed In :
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={props.deployLink}
+            >
+              {props.deployLink}
+            </a>
           </p>
         </div>
       </div>

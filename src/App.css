@@ -1,4 +1,5 @@
 .app {
   font-family: 'Josefin Slab';
   color: #545454;
+  overflow-x: hidden;
 }

@@ -4,19 +4,9 @@
   text-transform: none;
   font-style: normal;
   text-align: center;
+  margin-bottom: 3rem;
 }
 
-/* .project_summary {
-  margin: 3rem 8rem;
+.pjt_container {
+  padding: 0 6rem;
 }
-
-.project_name {
-  font-size: 25px;
-  margin-left: 2rem;
-}
-
-.project_desc {
-  margin: 2rem 4rem;
-  font-size: 15px;
-  color: rgb(177, 109, 109);
-} */

@@ -3,13 +3,15 @@
   display: flex;
   /* justify-content: space-between; */
   font-size: 19px;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .nav_name {
   font-size: 40px;
 }
 
-a:hover {
+.nav-item a:hover {
   color: rgb(144, 18, 18) !important;
   border-radius: 5px;
 }

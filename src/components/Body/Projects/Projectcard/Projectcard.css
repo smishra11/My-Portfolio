@@ -1,3 +1,15 @@
+.card_link a {
+  color: rgb(51, 144, 175);
+}
+
+.card_link a:hover {
+  text-decoration: none;
+}
+
 .projectcard {
-  justify-content: center;
+  height: 24rem;
+}
+
+.projectcard img {
+  height: 12rem;
 }
