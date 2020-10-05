@@ -10,8 +10,6 @@ class Sidebar extends Component {
 
   activeHandler = (key) => {
     return this.setState({ isactive: true, activekey: key });
-    // console.log('hiii');
-    // console.log(key);
   };
 
   render() {
