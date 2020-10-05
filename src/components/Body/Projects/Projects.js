@@ -52,14 +52,13 @@ class Projects extends Component {
     ];
 
     return (
-      <div className="pjt_container">
+      <div className="pjt_container" id="projects">
         <h3 className="project_header">Projects</h3>
         <div className="row mb-4">
           {allData.map((data, index) => {
             return (
-              <div className="col-sm-4 mb-4">
+              <div className="col-sm-4 mb-4" key={index}>
                 <Projectcard
-                  key={index}
                   title={data.title}
                   projectImage={data.projectImage}
                   gitLink={data.gitLink}

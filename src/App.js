@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import Header from './components/Header/Header';
+import Sidebar from './components/Header/Sidebar';
 import About from './components/Body/About/About';
 import Education from './components/Body/Education/Education';
 import Project from './components/Body/Projects/Projects';
 import Footer from './components/Footer/Footer';
 import Contact from './components/Body/Contact/Contact';
 
-// import { Switch, BrowserRouter as Router, Route, Link } from 'react-router-dom';
-
 class App extends Component {
   render() {
     return (
       <div className="app">
-        <Header />
+        <Sidebar />
         <About />
         <Education />
         <Project />

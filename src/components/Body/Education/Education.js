@@ -5,7 +5,7 @@ import './Education.css';
 class Education extends Component {
   render() {
     return (
-      <div className="education">
+      <div className="education" id="education">
         <p className="education_header">Education</p>
         <div className="text-center">
           <p>

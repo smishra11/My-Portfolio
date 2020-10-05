@@ -1,0 +1,28 @@
+.sidebar {
+  position: fixed;
+  z-index: 1;
+  right: 2rem;
+  top: 25%;
+}
+
+.sidebar_items {
+  display: inline-block;
+  background-color: #222222;
+  border-radius: 5px;
+}
+
+.sidebar_items a {
+  color: white;
+  padding: 20px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.sidebar_items a:hover {
+  color: gray;
+}
+.activeted {
+  background-color: #22a39f;
+  color: white;
+  pointer-events: none;
+}

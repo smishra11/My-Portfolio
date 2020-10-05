@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 
 import './Header.css';
-// import About from '../Body/About/About';
-// import Education from '../Body/Education/Education';
 
 class Header extends Component {
   render() {
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light nav_header">
-          <a className="navbar-brand nav_name" href="#">
+          <a className="navbar-brand nav_name" href="#app">
             icon with some text
           </a>
           <button
@@ -27,23 +25,23 @@ class Header extends Component {
           <div className="collapse navbar-collapse" id="navbarToggler">
             <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#about">
                   About
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#education">
                   Education
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#projects">
                   {/* change the href adress */}
                   Projects
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#contact">
                   {/* change the href adress */}
                   Contact
                 </a>
