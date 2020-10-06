@@ -21,8 +21,7 @@
 .sidebar_items a:hover {
   color: gray;
 }
-.activeted {
+.activated {
   background-color: #22a39f;
-  color: white;
-  pointer-events: none;
+  color: white !important;
 }

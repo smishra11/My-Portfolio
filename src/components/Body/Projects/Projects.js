@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 import './Projects.css';
 import Projectcard from './Projectcard/Projectcard';
 
-import GithubFinder from './github_finder.png';
-import Lyricsfinder from './lyrics_finder.png';
-import Amazonclone from './amazon_clone.png';
-import Burgerbuilder from './burger_builder.png';
-import Beachresort from './beach_resort.png';
-import Trackcalorie from './track_calorie.png';
+import GithubFinder from '../../../assets/github_finder.png';
+import Lyricsfinder from '../../../assets/lyrics_finder.png';
+import Amazonclone from '../../../assets/amazon_clone.png';
+import Burgerbuilder from '../../../assets/burger_builder.png';
+import Beachresort from '../../../assets/beach_resort.png';
+import Trackcalorie from '../../../assets/track_calorie.png';
 
 class Projects extends Component {
   render() {

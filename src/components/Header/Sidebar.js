@@ -40,16 +40,16 @@ class Sidebar extends Component {
         <ul className="nav flex-column sidebar_items">
           {linkData.map((data) => {
             return (
-              <li
-                className={
-                  this.state.activekey === data.key
-                    ? 'nav-item activeted'
-                    : 'nav-item'
-                }
-                key={data.key}
-                onClick={() => this.activeHandler(data.key)}
-              >
-                <a className="nav-link" href={data.pageLink}>
+              <li className="nav-item" key={data.key}>
+                <a
+                  className={
+                    this.state.activekey === data.key
+                      ? 'nav-link activated'
+                      : 'nav-link'
+                  }
+                  href={data.pageLink}
+                  onClick={() => this.activeHandler(data.key)}
+                >
                   {data.linkName}
                 </a>
               </li>
