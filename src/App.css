@@ -1,5 +1,19 @@
 .app {
   font-family: 'Josefin Slab';
-  color: #545454;
+  color: #797676;
   overflow-x: hidden;
+  padding: 0 15rem;
+}
+
+.comp_header {
+  text-align: center;
+  padding: 2rem 0;
+}
+.comp_title {
+  font-size: 45px;
+  margin: 0;
+  color: #22a39f;
+}
+.comp_description {
+  font-size: 25px;
 }

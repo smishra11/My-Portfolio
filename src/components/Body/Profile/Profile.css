@@ -1,0 +1,39 @@
+.about {
+  /* background-color: yellowgreen; */
+  margin-bottom: 4rem;
+  height: 100vh;
+}
+
+.about_photo {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.about_body {
+  display: flex;
+  font-size: 17px;
+  text-transform: none;
+  font-style: normal;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+  margin-top: 3rem;
+}
+
+.about_body_title {
+  color: #22a39f;
+  font-size: 28px;
+  margin-bottom: 2rem;
+}
+.about_body_container {
+  width: 40%;
+  margin-right: 2rem;
+}
+.about_photo_container {
+  padding: 0 2rem 0 1.4rem;
+  text-align: center;
+}
+.details_title {
+  font-weight: bold;
+  color: rgb(24, 23, 23);
+}

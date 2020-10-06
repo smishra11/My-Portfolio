@@ -8,7 +8,15 @@ class Contact extends Component {
   render() {
     return (
       <div id="contact">
-        <h1 className="text-center">Contact</h1>
+        <div className="comp_header">
+          <p className="comp_title">Contact</p>
+          <p className="comp_description">
+            “If I had asked people what they wanted, they would have said faster
+            horses. ”
+            <br /> - Henry Ford
+          </p>
+        </div>
+        <hr />
         <div className="text-center">
           <span className="mr-4">
             <a

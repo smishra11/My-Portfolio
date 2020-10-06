@@ -53,7 +53,14 @@ class Projects extends Component {
 
     return (
       <div className="pjt_container" id="projects">
-        <h3 className="project_header">Projects</h3>
+        <div className="comp_header">
+          <p className="comp_title">Projects</p>
+          <p className="comp_description">
+            “You can do anything you set your mind to.”
+            <br /> - Benjamin Franklin
+          </p>
+        </div>
+        <hr />
         <div className="row mb-4">
           {allData.map((data, index) => {
             return (

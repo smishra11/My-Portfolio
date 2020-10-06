@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './App.css';
 import Sidebar from './components/Header/Sidebar';
-import About from './components/Body/About/About';
+import Profile from './components/Body/Profile/Profile';
 import Education from './components/Body/Education/Education';
 import Project from './components/Body/Projects/Projects';
 import Footer from './components/Footer/Footer';
@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <div className="app">
         <Sidebar />
-        <About />
+        <Profile />
         <Education />
         <Project />
         <Contact />

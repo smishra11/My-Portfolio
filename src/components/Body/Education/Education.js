@@ -6,7 +6,14 @@ class Education extends Component {
   render() {
     return (
       <div className="education" id="education">
-        <p className="education_header">Education</p>
+        <div className="comp_header">
+          <p className="comp_title">Education</p>
+          <p className="comp_description">
+            “Life without knowledge is death in disguise.”
+            <br />- Talib Kweli
+          </p>
+        </div>
+        <hr />
         <div className="text-center">
           <p>
             <span className="education_1">Intermediate: </span>
