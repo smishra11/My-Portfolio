@@ -1,6 +1,6 @@
-/* .education {
-  margin: 5rem;
-} */
+.education {
+  height: 100vh;
+}
 
 .education_header {
   font-size: 40px;
@@ -10,6 +10,9 @@
   text-align: center;
 }
 
-.education_1 {
-  font-size: 20px;
+.education_title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  color: rgb(24, 23, 23);
 }
