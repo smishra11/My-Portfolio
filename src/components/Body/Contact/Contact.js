@@ -43,6 +43,7 @@ class Contact extends Component {
           <p className="mr-4">Phone - 7008857364</p>
           <p>Email - subhasish.mishra17@gmail.com</p>
         </div>
+        <hr />
         <div className="comp_footer">
           Built by <span className="footer_name">Subhasish</span> ©{' '}
           {new Date().getFullYear()}

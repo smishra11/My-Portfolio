@@ -9,31 +9,37 @@ class Abilities extends Component {
         abilityName: 'React Js',
         blueStar: 4,
         normalStar: 1,
+        key: 1,
       },
       {
         abilityName: 'Redux',
         blueStar: 4,
         normalStar: 1,
+        key: 2,
       },
       {
         abilityName: 'Redux Thunk',
         blueStar: 3,
         normalStar: 2,
+        key: 3,
       },
       {
         abilityName: 'Javascript',
         blueStar: 4,
         normalStar: 1,
+        key: 4,
       },
       {
         abilityName: 'Axios',
         blueStar: 4,
         normalStar: 1,
+        key: 5,
       },
       {
         abilityName: 'Ajax',
         blueStar: 4,
         normalStar: 1,
+        key: 6,
       },
     ];
     const secondList = [
@@ -41,31 +47,37 @@ class Abilities extends Component {
         abilityName: 'HTML',
         blueStar: 4,
         normalStar: 1,
+        key: 7,
       },
       {
         abilityName: 'CSS',
         blueStar: 4,
         normalStar: 1,
+        key: 8,
       },
       {
         abilityName: 'Bootstrap',
         blueStar: 4,
         normalStar: 1,
+        key: 9,
       },
       {
         abilityName: 'Git',
         blueStar: 3,
         normalStar: 2,
+        key: 10,
       },
       {
         abilityName: 'Debugging',
         blueStar: 3,
         normalStar: 2,
+        key: 11,
       },
       {
         abilityName: 'Team Work',
         blueStar: 4,
         normalStar: 1,
+        key: 12,
       },
     ];
     return (
@@ -85,17 +97,21 @@ class Abilities extends Component {
               <ul className="no-bullets">
                 {firstList.map((list1) => {
                   return (
-                    <li className="list_items">
+                    <li className="list_items" key={list1.key}>
                       {list1.abilityName}
                       {Array(list1.blueStar)
                         .fill()
-                        .map((_) => (
-                          <span className="blue_star">★</span>
+                        .map((_, i) => (
+                          <span className="blue_star" key={i}>
+                            ★
+                          </span>
                         ))}
                       {Array(list1.normalStar)
                         .fill()
-                        .map((_) => (
-                          <span className="grey_star">★</span>
+                        .map((_, i) => (
+                          <span className="grey_star" key={i}>
+                            ★
+                          </span>
                         ))}
                     </li>
                   );
@@ -106,17 +122,21 @@ class Abilities extends Component {
               <ul className="no-bullets">
                 {secondList.map((list2) => {
                   return (
-                    <li className="list_items ml-2">
+                    <li className="list_items ml-2" key={list2.key}>
                       {list2.abilityName}
                       {Array(list2.blueStar)
                         .fill()
-                        .map((_) => (
-                          <span className="blue_star">★</span>
+                        .map((_, i) => (
+                          <span className="blue_star" key={i}>
+                            ★
+                          </span>
                         ))}
                       {Array(list2.normalStar)
                         .fill()
-                        .map((_) => (
-                          <span className="grey_star">★</span>
+                        .map((_, i) => (
+                          <span className="grey_star" key={i}>
+                            ★
+                          </span>
                         ))}
                     </li>
                   );

@@ -5,8 +5,10 @@
 }
 
 .contact {
-  height: 100vh;
+  height: 99vh;
   padding: 0 15rem;
+  background-color: #434242;
+  color: rgb(160, 182, 201);
 }
 
 .all_icons {
