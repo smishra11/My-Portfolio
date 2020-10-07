@@ -8,7 +8,6 @@ const Projectcard = (props) => {
       <img className="card-img-top" src={props.projectImage} alt="Card cap" />
       <div className="card-body">
         <h5 className="card-title project_title">{props.title}</h5>
-        {/* take to middle of card image */}
         <div className="card-text card_link">
           <p>
             Git Hub :

@@ -1,0 +1,35 @@
+.abilities {
+  height: 100vh;
+  padding: 0 15rem;
+  background-color: #e5e5e5;
+}
+.ability_title {
+  color: #22a39f;
+  font-size: 28px;
+  margin-bottom: 2rem;
+}
+
+.abilities_body ul {
+  list-style-type: none;
+}
+
+.blue_star {
+  color: rgb(59, 153, 59);
+  font-size: 20px;
+}
+.grey_star {
+  color: rgb(236, 95, 95);
+  font-size: 20px;
+}
+.abilities_body ul {
+  line-height: 2rem;
+  font-size: 18px;
+}
+
+.list_items:hover {
+  background-color: whitesmoke;
+}
+.list_items {
+  padding-left: 1rem;
+  border-radius: 5px;
+}

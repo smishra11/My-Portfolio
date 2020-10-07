@@ -25,14 +25,19 @@ class Sidebar extends Component {
         key: 2,
       },
       {
+        linkName: 'Abilities',
+        pageLink: '#abilities',
+        key: 3,
+      },
+      {
         linkName: 'Projects',
         pageLink: '#projects',
-        key: 3,
+        key: 4,
       },
       {
         linkName: 'Contact',
         pageLink: '#contact',
-        key: 4,
+        key: 5,
       },
     ];
     return (
