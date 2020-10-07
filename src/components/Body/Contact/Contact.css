@@ -1,0 +1,25 @@
+.comp_footer {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 4rem;
+}
+
+.contact {
+  height: 100vh;
+  padding: 0 15rem;
+}
+
+.all_icons {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.contact_details {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  font-size: 20px;
+}
+.footer_name {
+  font-weight: bold;
+}

@@ -7,7 +7,7 @@ import Linkedin from './linkedin.svg';
 class Contact extends Component {
   render() {
     return (
-      <div id="contact">
+      <div className="contact" id="contact">
         <div className="comp_header">
           <p className="comp_title">Contact</p>
           <p className="comp_description">
@@ -17,7 +17,7 @@ class Contact extends Component {
           </p>
         </div>
         <hr />
-        <div className="text-center">
+        <div className="all_icons">
           <span className="mr-4">
             <a
               target="_blank"
@@ -38,6 +38,14 @@ class Contact extends Component {
               <img src={Linkedin} alt="linkedin icon" />
             </a>
           </span>
+        </div>
+        <div className="contact_details">
+          <p className="mr-4">Phone - 7008857364</p>
+          <p>Email - subhasish.mishra17@gmail.com</p>
+        </div>
+        <div className="comp_footer">
+          Built by <span className="footer_name">Subhasish</span> ©{' '}
+          {new Date().getFullYear()}
         </div>
       </div>
     );

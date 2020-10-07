@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './Profile.css';
 import Photo from './logo.png';
 
-class About extends Component {
+class Profile extends Component {
   render() {
     return (
       <div className="about" id="about">
@@ -51,4 +51,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Profile;

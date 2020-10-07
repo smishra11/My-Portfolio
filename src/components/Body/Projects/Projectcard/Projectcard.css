@@ -1,15 +1,21 @@
 .card_link a {
   color: rgb(51, 144, 175);
-}
-
-.card_link a:hover {
-  text-decoration: none;
+  font-size: 14px;
 }
 
 .projectcard {
-  height: 24rem;
+  height: 25rem;
 }
 
 .projectcard img {
   height: 12rem;
+}
+
+.project_title {
+  text-align: center;
+  color: black;
+}
+
+.card_link {
+  line-height: 1.2rem;
 }
