@@ -41,8 +41,6 @@ class Abilities extends Component {
         normalStar: 1,
         key: 6,
       },
-    ];
-    const secondList = [
       {
         abilityName: 'HTML',
         blueStar: 4,
@@ -92,57 +90,30 @@ class Abilities extends Component {
         <hr />
         <div className="abilities_body">
           <p className="ability_title">Skills</p>
-          <div className="row">
-            <div className="col-md-6 p-0">
-              <ul className="no-bullets">
-                {firstList.map((list1) => {
-                  return (
-                    <li className="list_items" key={list1.key}>
-                      {list1.abilityName}
-                      {Array(list1.blueStar)
-                        .fill()
-                        .map((_, i) => (
-                          <span className="blue_star" key={i}>
-                            ★
-                          </span>
-                        ))}
-                      {Array(list1.normalStar)
-                        .fill()
-                        .map((_, i) => (
-                          <span className="grey_star" key={i}>
-                            ★
-                          </span>
-                        ))}
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-            <div className="col-md-6">
-              <ul className="no-bullets">
-                {secondList.map((list2) => {
-                  return (
-                    <li className="list_items ml-2" key={list2.key}>
-                      {list2.abilityName}
-                      {Array(list2.blueStar)
-                        .fill()
-                        .map((_, i) => (
-                          <span className="blue_star" key={i}>
-                            ★
-                          </span>
-                        ))}
-                      {Array(list2.normalStar)
-                        .fill()
-                        .map((_, i) => (
-                          <span className="grey_star" key={i}>
-                            ★
-                          </span>
-                        ))}
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
+          <div className="row pl-4 pr-4">
+            {firstList.map((list1) => {
+              return (
+                <div className="col-md-6 ability_items" key={list1.key}>
+                  <div>{list1.abilityName}</div>
+                  <div>
+                    {Array(list1.blueStar)
+                      .fill()
+                      .map((_, i) => (
+                        <span className="green_star" key={i}>
+                          ★
+                        </span>
+                      ))}
+                    {Array(list1.normalStar)
+                      .fill()
+                      .map((_, i) => (
+                        <span className="red_star" key={i}>
+                          ★
+                        </span>
+                      ))}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

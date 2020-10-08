@@ -1,6 +1,6 @@
 .abilities {
   height: 100vh;
-  padding: 0 15rem;
+  padding: 0 12rem;
   background-color: #e5e5e5;
 }
 .ability_title {
@@ -9,27 +9,26 @@
   margin-bottom: 2rem;
 }
 
-.abilities_body ul {
-  list-style-type: none;
-}
-
-.blue_star {
+.green_star {
   color: rgb(59, 153, 59);
   font-size: 20px;
 }
-.grey_star {
+.red_star {
   color: rgb(236, 95, 95);
   font-size: 20px;
 }
-.abilities_body ul {
-  line-height: 2rem;
-  font-size: 18px;
+
+.ability_items:hover {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  color: black;
 }
 
-.list_items:hover {
-  background-color: whitesmoke;
-}
 .list_items {
   padding-left: 1rem;
   border-radius: 5px;
+}
+.ability_items {
+  display: flex;
+  justify-content: space-between;
 }
