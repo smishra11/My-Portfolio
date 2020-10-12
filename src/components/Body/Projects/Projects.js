@@ -52,7 +52,7 @@ class Projects extends Component {
     ];
 
     return (
-      <div className="pjt_container" id="projects">
+      <div className="pjt_container card" id="projects">
         <div className="comp_header">
           <p className="comp_title">Projects</p>
           <p className="comp_description">

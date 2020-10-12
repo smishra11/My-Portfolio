@@ -3,11 +3,39 @@ import React, { Component } from 'react';
 import './Contact.css';
 import Github from './github.svg';
 import Linkedin from './linkedin.svg';
+import Gmail from './gmail_icon.svg';
+import Contactfrom from './Contactform/Contactform';
+
+import emailjs from 'emailjs-com';
 
 class Contact extends Component {
+  state = {
+    isClicked: false,
+  };
+
+  sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        'gmail',
+        'template_23b79el',
+        e.target,
+        'user_VtJbrHv2zwrz32QzRI7hW'
+      )
+      .then(
+        (response) => {
+          console.log(response.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   render() {
     return (
-      <div className="contact" id="contact">
+      <div className="contact card" id="contact">
         <div className="comp_header">
           <p className="comp_title">Contact</p>
           <p className="comp_description">
@@ -18,7 +46,7 @@ class Contact extends Component {
         </div>
         <hr />
         <div className="all_icons">
-          <span className="mr-4">
+          <span>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -28,7 +56,7 @@ class Contact extends Component {
               <img src={Github} alt="git icon" />
             </a>
           </span>
-          <span>
+          <span className="pl-3 pr-4">
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -38,12 +66,17 @@ class Contact extends Component {
               <img src={Linkedin} alt="linkedin icon" />
             </a>
           </span>
-        </div>
-        <div className="contact_details">
-          <p className="mr-4">Phone - 7008857364</p>
-          <p>Email - subhasish.mishra17@gmail.com</p>
+          <span>
+            <a
+              href="https://www.linkedin.com/in/subhasish-mishra-17d97/"
+              alt="gmail"
+            >
+              <img src={Gmail} alt="gmail icon" />
+            </a>
+          </span>
         </div>
         <hr />
+        <Contactfrom sendEmail={this.sendEmail} />
         <div className="comp_footer">
           Built by <span className="footer_name">Subhasish</span> ©{' '}
           {new Date().getFullYear()}

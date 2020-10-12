@@ -6,7 +6,7 @@ import Photo from './logo.png';
 class Profile extends Component {
   render() {
     return (
-      <div className="about" id="about">
+      <div className="about card" id="about">
         <div className="comp_header">
           <p className="comp_title">Profile</p>
           <p className="comp_description">A creative React webdeveloper</p>

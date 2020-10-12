@@ -1,11 +1,11 @@
 .comp_footer {
   text-align: center;
   font-size: 18px;
-  margin-top: 4rem;
+  margin-top: auto;
 }
 
 .contact {
-  height: 99vh;
+  height: 100%;
   padding: 0 12rem;
   background-color: #434242;
   color: rgb(160, 182, 201);
@@ -13,15 +13,9 @@
 
 .all_icons {
   text-align: center;
-  margin-top: 5rem;
+  margin: 1rem;
 }
 
-.contact_details {
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
-  font-size: 20px;
-}
 .footer_name {
   font-weight: bold;
 }

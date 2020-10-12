@@ -7,7 +7,7 @@ import BachelorDegree from '../../../assets/bachelor_degree.jpg';
 class Education extends Component {
   render() {
     return (
-      <div className="education" id="education">
+      <div className="education card" id="education">
         <div className="comp_header">
           <p className="comp_title">Education</p>
           <p className="comp_description">
