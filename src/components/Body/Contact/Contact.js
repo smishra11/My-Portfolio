@@ -33,6 +33,10 @@ class Contact extends Component {
     e.target.reset();
   };
 
+  emailClicked = () => {
+    this.setState({ isClicked: !this.state.isClicked });
+  };
+
   render() {
     return (
       <div className="contact card" id="contact">
@@ -66,17 +70,17 @@ class Contact extends Component {
               <img src={Linkedin} alt="linkedin icon" />
             </a>
           </span>
-          <span>
-            <a
-              href="https://www.linkedin.com/in/subhasish-mishra-17d97/"
-              alt="gmail"
-            >
-              <img src={Gmail} alt="gmail icon" />
-            </a>
+          <span onClick={this.emailClicked}>
+            <img className="gmailicon" src={Gmail} alt="gmail icon" />
           </span>
         </div>
         <hr />
-        <Contactfrom sendEmail={this.sendEmail} />
+        {this.state.isClicked ? (
+          <Contactfrom
+            sendEmail={this.sendEmail}
+            formClosed={this.emailClicked}
+          />
+        ) : null}
         <div className="comp_footer">
           Built by <span className="footer_name">Subhasish</span> ©{' '}
           {new Date().getFullYear()}

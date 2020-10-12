@@ -5,7 +5,7 @@ class Contactform extends Component {
     return (
       <>
         <div className="card px-4 py-3 mx-5">
-          <form onSubmit={this.sendEmail}>
+          <form onSubmit={this.props.sendEmail}>
             <div className="form-group">
               <label htmlFor="email1">
                 Email
@@ -35,8 +35,15 @@ class Contactform extends Component {
               />
             </div>
             <div className="text-center">
-              <button type="submit" className="btn btn-primary">
+              <button type="submit" className="btn btn-primary mr-3">
                 Submit
+              </button>
+              <button
+                type="button"
+                className="btn btn-primary"
+                onClick={this.props.formClosed}
+              >
+                Close
               </button>
             </div>
           </form>
